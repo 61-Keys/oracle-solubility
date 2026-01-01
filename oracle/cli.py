@@ -1,6 +1,7 @@
 import argparse
 
-def main():
+
+def main() -> None:
     parser = argparse.ArgumentParser(prog='oracle', description='Protein solubility predictor')
     subparsers = parser.add_subparsers(dest='command')
     

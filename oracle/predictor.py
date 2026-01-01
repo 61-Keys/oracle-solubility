@@ -6,7 +6,7 @@ import torch
 import numpy as np
 from pathlib import Path
 from dataclasses import dataclass
-from typing import Optional, List, Dict, Any
+from typing import Optional, List, Dict
 import warnings
 
 from .model import OracleNet
@@ -35,8 +35,8 @@ class PredictionResult:
     solubility_score: float
     features: Dict[str, float]
     recommendations: List[str]
-    
-    _visualizer: Optional[Any] = None
+
+    _visualizer: Optional[Visualizer] = None
     
     def __repr__(self):
         status = "✅ SOLUBLE" if self.soluble else "❌ INSOLUBLE"

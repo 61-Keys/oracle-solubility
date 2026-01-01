@@ -3,7 +3,7 @@ ORACLE Visualizations - Modern, Clean, Minimal Design
 """
 
 import numpy as np
-from typing import TYPE_CHECKING
+from typing import TYPE_CHECKING, Tuple, Any
 
 if TYPE_CHECKING:
     from .predictor import PredictionResult
@@ -32,7 +32,7 @@ class Visualizer:
         'bg': '#F9FAFB',
     }
     
-    def visualize(self, result: "PredictionResult", style: str = "full"):
+    def visualize(self, result: "PredictionResult", style: str = "full") -> None:
         """Create visualization."""
         try:
             import matplotlib.pyplot as plt
@@ -52,7 +52,7 @@ class Visualizer:
         else:
             self._plot_full(result, plt)
     
-    def _get_color(self, score):
+    def _get_color(self, score: float) -> Tuple[str, str]:
         if score >= 0.7:
             return self.COLORS['success'], self.COLORS['success_light']
         elif score >= 0.5:
@@ -60,7 +60,7 @@ class Visualizer:
         else:
             return self.COLORS['danger'], self.COLORS['danger_light']
     
-    def _plot_full(self, result, plt):
+    def _plot_full(self, result: "PredictionResult", plt: Any) -> None:
         """Full dashboard layout."""
         import matplotlib.patches as patches
         from matplotlib.gridspec import GridSpec
@@ -216,7 +216,7 @@ class Visualizer:
         
         plt.show()
     
-    def _plot_minimal(self, result, plt):
+    def _plot_minimal(self, result: "PredictionResult", plt: Any) -> None:
         """Minimal card view."""
         import matplotlib.patches as patches
         
