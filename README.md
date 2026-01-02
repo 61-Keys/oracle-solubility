@@ -23,7 +23,6 @@ ORACLE is a deep learning tool that predicts whether your protein will express a
 ### Why use ORACLE?
 
 - ⏱️ **Save weeks of lab work** - Know beforehand which proteins are likely to fail
-- 🎯 **85.7% accuracy** on real-world proteins (GFP, Ubiquitin, membrane proteins, etc.)
 - 🧠 **State-of-the-art** - Uses ESM-2 protein language model embeddings
 - 📊 **Beautiful visualizations** - Understand why your protein may or may not express
 - 💡 **Actionable recommendations** - Get suggestions to improve expression
@@ -93,7 +92,6 @@ oracle info
 | Metric | Value |
 |--------|-------|
 | **Test Set Accuracy** | 66.8% |
-| **Real-world Accuracy** | 85.7% |
 | **F1 Score** | 0.67 |
 | **AUC-ROC** | 0.73 |
 
@@ -112,7 +110,7 @@ oracle info
 | Spider Silk | Insoluble | ✅ Insoluble (91%) | ✅ |
 | Prion Protein | Insoluble | ✅ Insoluble (85%) | ✅ |
 
-**Overall: 12/14 correct (85.7%)**
+**Overall: 12/14 correct**
 
 ---
 
