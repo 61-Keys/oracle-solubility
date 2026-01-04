@@ -16,16 +16,16 @@
 
 </div>
 
-## 🎯 What is ORACLE?
+##  What is ORACLE?
 
 ORACLE is a deep learning tool that predicts whether your protein will express as **soluble** or form **inclusion bodies** in E. coli. It helps researchers prioritize which proteins to express experimentally, saving time and resources.
 
 ### Why use ORACLE?
 
-- ⏱️ **Save weeks of lab work** - Know beforehand which proteins are likely to fail
-- 🧠 **State-of-the-art** - Uses ESM-2 protein language model embeddings
-- 📊 **Beautiful visualizations** - Understand why your protein may or may not express
-- 💡 **Actionable recommendations** - Get suggestions to improve expression
+- **Save weeks of lab work** - Know beforehand which proteins are likely to fail
+- **State-of-the-art** - Uses ESM-2 protein language model embeddings
+- **Beautiful visualizations** - Understand why your protein may or may not express
+- **Actionable recommendations** - Get suggestions to improve expression
 
 ---
 
@@ -41,7 +41,7 @@ pip install git+https://github.com/61-Keys/oracle-solubility.git
 
 ---
 
-## 🚀 Usage
+## Usage
 
 ### Python API
 ```python
@@ -114,7 +114,7 @@ oracle info
 
 ---
 
-## 🧠 How It Works
+## How It Works
 
 ORACLE combines two types of features:
 
@@ -152,14 +152,14 @@ Input Sequence
 
 ---
 
-## 📚 Training Data
+##  Training Data
 
 ORACLE was trained on **60,000 proteins** from [TargetTrack (PSI:Biology)](https://zenodo.org/records/821654):
 
-- 🏛️ **35 research centers** worldwide
-- 🧪 **Real experimental outcomes** (not computational predictions)
-- ⚖️ **Balanced dataset** (30,000 soluble, 30,000 insoluble)
-- 📅 **17 years** of structural genomics data
+-  **35 research centers** worldwide
+-  **Real experimental outcomes** (not computational predictions)
+-  **Balanced dataset** (30,000 soluble, 30,000 insoluble)
+-  **17 years** of structural genomics data
 
 ### Label Definitions
 
@@ -248,16 +248,7 @@ If you use ORACLE in your research, please cite:
 
 MIT License - see [LICENSE](LICENSE) for details.
 
----
 
-## 🤝 Contributing
-
-Contributions welcome! Feel free to:
-- 🐛 Report bugs
-- 💡 Suggest features
-- 🔀 Submit pull requests
-
----
 
 <div align="center">
 
